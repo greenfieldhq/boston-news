@@ -1,7 +1,8 @@
 class Api::SearchController < ApplicationController
   def index
-    search = NewsSearch.new(params[:query])
-    news = search.query.only(:id).load()
+    search = BostonNewsIndex.query(query_string: {fields: [:title, :body],
+      query: params[:query], default_operator: 'and'}) if params
+    news = search.load()
 
     render json: news
   end

@@ -1,0 +1,14 @@
+<div class="row search">
+  {{input value=query
+        placeholder="Enter search query..."
+        autofocus="autofocus"}}
+</div>
+<div class="row">
+  <ol>
+    {{#each model as |story|}}
+      <li>
+        <p>{{story.title}}</p>
+      </li>
+    {{/each}}
+  </ol>
+</div>
