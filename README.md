@@ -1,15 +1,13 @@
 Very simple elastic search demo app with Ember and Rails.
 
 
-`git clone git@github.com:greenfieldhq/boston-news.git`
-`cd boston-news/rails`
-`rake db:setup`
-`rails s`
+1.  `git clone git@github.com:greenfieldhq/boston-news.git`
+1.  `cd boston-news/rails`
+1.  `rake db:setup`
+1.  `rails s`
 
 in another terminal window
-`cd boston-news/ember`
-`npm install && bower install`
-`ember serve --proxy http://localhost:3000`
 
-
-`
+1.  `cd boston-news/ember`
+1.  `npm install && bower install`
+1.  `ember serve --proxy http://localhost:3000`
